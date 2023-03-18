@@ -37,7 +37,7 @@ class SearchBar extends Component {
         <SearchForm onSubmit={this.handlerOnSubmit}>
           <SearchFormButton
             type="submit"
-            disabled={this.state.searchQuery.length === 0}
+            disabled={this.state.searchQuery.trim().length === 0}
           >
             <SearchFormButtonLabel>Search</SearchFormButtonLabel>
           </SearchFormButton>
